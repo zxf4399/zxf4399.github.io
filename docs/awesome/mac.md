@@ -15,3 +15,7 @@ title: Mac
 ## 终端
 
 [iTerm2](https://iterm2.com/) - iTerm2 is a terminal emulator for Mac OS X that does amazing things.
+
+## 包管理器
+
+[Homebrew](https://brew.sh/) - The Missing Package Manager for macOS (or Linux)

@@ -8,10 +8,6 @@ title: Mac
 
 [vimac](https://vimacapp.com/) - Productive macOS keyboard-driven navigation
 
-## 编辑器
-
-[vscode](https://code.visualstudio.com/) - Visual Studio Code
-
 ## 清理工具
 
 [腾讯柠檬清理](https://lemon.qq.com/) - 全新 Mac 清理工具，实时了解 Mac 系统状况

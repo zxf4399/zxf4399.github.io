@@ -1,5 +1,5 @@
 ---
-title: cli
+title: Cli
 ---
 
 ## Node

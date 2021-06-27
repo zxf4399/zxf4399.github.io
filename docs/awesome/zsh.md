@@ -1,5 +1,5 @@
 ---
-title: zsh
+title: Zsh
 ---
 
 ## 框架

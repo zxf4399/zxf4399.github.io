@@ -11,6 +11,7 @@ title: Mac
 ## 清理工具
 
 [腾讯柠檬清理](https://lemon.qq.com/) - 全新 Mac 清理工具，实时了解 Mac 系统状况
+[AppCleaner](https://freemacsoft.net/appcleaner/) - AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 
 ## 终端
 
@@ -22,4 +23,4 @@ title: Mac
 
 ## 微信
 
-[WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac) - Mac微信功能拓展/微信插件/微信小助手(A plugin for Mac WeChat)
+[WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac) - Mac 微信功能拓展/微信插件/微信小助手(A plugin for Mac WeChat)

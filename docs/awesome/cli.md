@@ -16,4 +16,6 @@ title: Cli
 
 ## Tools
 
+[tldr](https://tldr.sh/) - 📚 Collaborative cheatsheets for console commands
+
 [yadm](https://yadm.io/) - Yet Another Dotfiles Manager

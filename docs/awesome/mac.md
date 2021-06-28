@@ -6,6 +6,8 @@ title: Mac
 
 [Raycast](https://raycast.com/) - Raycast lets you control your tools with a few keystrokes. It’s designed to keep you focused.
 
+[Karabiner-Elements](https://karabiner-elements.pqrs.org/) - Karabiner-Elements is a powerful utility for keyboard customization on macOS Sierra (10.12) or later.
+
 [vimac](https://vimacapp.com/) - Productive macOS keyboard-driven navigation
 
 ## 清理工具

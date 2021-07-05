@@ -4,9 +4,11 @@ title: Mac
 
 ## Productivity
 
-[Raycast](https://raycast.com/) - Raycast lets you control your tools with a few keystrokes. It’s designed to keep you focused.
+[HyperSwitch](https://bahoom.com/hyperswitch) - Yet another keyboard window switcher for your MacYet another keyboard window switcher for your Mac
 
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/) - Karabiner-Elements is a powerful utility for keyboard customization on macOS Sierra (10.12) or later.
+
+[Raycast](https://raycast.com/) - Raycast lets you control your tools with a few keystrokes. It’s designed to keep you focused.
 
 [iShot](https://www.better365.cn/ishot.html) - 截图、长截图、贴图、标注、取色、录屏一个顶六个，样样皆优秀。
 

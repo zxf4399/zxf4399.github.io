@@ -2,6 +2,10 @@
 title: Mac
 ---
 
+## Calendar
+
+[Itsycal](https://github.com/sfsam/Itsycal) - Itsycal is a tiny calendar for your Mac's menu bar.
+
 ## Productivity
 
 [HyperSwitch](https://bahoom.com/hyperswitch) - Yet another keyboard window switcher for your MacYet another keyboard window switcher for your Mac

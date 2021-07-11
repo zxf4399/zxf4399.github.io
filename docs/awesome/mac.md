@@ -18,6 +18,10 @@ title: Mac
 
 [vimac](https://vimacapp.com/) - Productive macOS keyboard-driven navigation
 
+## Quality of Life Improvements
+
+[f.lux](https://justgetflux.com/) - Makes the color of your computer's display adapt to the time of day.
+
 ## 清理工具
 
 [腾讯柠檬清理](https://lemon.qq.com/) - 全新 Mac 清理工具，实时了解 Mac 系统状况

@@ -35,7 +35,3 @@ title: Mac
 ## 包管理器
 
 [Homebrew](https://brew.sh/) - The Missing Package Manager for macOS (or Linux)
-
-## 微信
-
-[WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac) - Mac 微信功能拓展/微信插件/微信小助手(A plugin for Mac WeChat)

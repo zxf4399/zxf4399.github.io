@@ -6,9 +6,7 @@ title: Mac
 
 [Itsycal](https://github.com/sfsam/Itsycal) - Itsycal is a tiny calendar for your Mac's menu bar.
 
-## Productivity
-
-[HyperSwitch](https://bahoom.com/hyperswitch) - Yet another keyboard window switcher for your MacYet another keyboard window switcher for your Mac
+## 生产力
 
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/) - Karabiner-Elements is a powerful utility for keyboard customization on macOS Sierra (10.12) or later.
 
@@ -18,6 +16,8 @@ title: Mac
 
 [vimac](https://vimacapp.com/) - Productive macOS keyboard-driven navigation
 
+[Manico](https://manico.im/) - Manico 是一个为 macOS 设计的快速的 App 启动和切换工具
+
 ## Quality of Life Improvements
 
 [f.lux](https://justgetflux.com/) - Makes the color of your computer's display adapt to the time of day.
@@ -25,8 +25,6 @@ title: Mac
 ## 清理工具
 
 [腾讯柠檬清理](https://lemon.qq.com/) - 全新 Mac 清理工具，实时了解 Mac 系统状况
-
-[AppCleaner](https://freemacsoft.net/appcleaner/) - AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 
 ## 终端
 

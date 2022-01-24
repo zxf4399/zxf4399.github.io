@@ -6,9 +6,11 @@ title: Cli
 
 [ranger](https://github.com/ranger/ranger) - A VIM-inspired filemanager for the console
 
-## Npm
+## npm
 
 [commitizen](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
+
+[tldr](https://github.com/tldr-pages/tldr-node-client) - Node.js command-line client for tldr pages
 
 ## Node
 

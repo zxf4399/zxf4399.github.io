@@ -8,6 +8,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         children: [
           "/awesome/cli.md",
           "/awesome/mac",
+          "/awesome/npm",
           "/awesome/tmux",
           "/awesome/tool",
           "/awesome/zsh",

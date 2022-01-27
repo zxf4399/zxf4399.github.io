@@ -16,8 +16,6 @@ title: Mac
 
 [vimac](https://vimacapp.com/) - Productive macOS keyboard-driven navigation
 
-[Manico](https://manico.im/) - Manico 是一个为 macOS 设计的快速的 App 启动和切换工具
-
 ## Quality of Life Improvements
 
 [f.lux](https://justgetflux.com/) - Makes the color of your computer's display adapt to the time of day.
@@ -33,3 +31,7 @@ title: Mac
 ## 包管理器
 
 [Homebrew](https://brew.sh/) - The Missing Package Manager for macOS (or Linux)
+
+## File Organization Tools
+
+[Keka](https://www.keka.io) - the macOS file archiver Store more, share with privacy

@@ -1,0 +1,1 @@
+const e={key:"v-f3f55c1a",path:"/awesome/npm.html",title:"npm",lang:"en-US",frontmatter:{title:"npm"},excerpt:"",headers:[{level:2,title:"cli",slug:"cli",children:[]}],git:{updatedTime:164335655e4,contributors:[{name:"zxf4399",email:"zxf4399@gmail.com",commits:4}]},filePathRelative:"awesome/npm.md"};export{e as data};

@@ -1,0 +1,1 @@
+const t={key:"v-c2446a10",path:"/awesome/tmux.html",title:"Tmux",lang:"en-US",frontmatter:{title:"Tmux"},excerpt:"",headers:[{level:2,title:"Configuration",slug:"configuration",children:[]}],git:{updatedTime:1625276824e3,contributors:[{name:"zxf4399",email:"zxf4399@gmail.com",commits:1}]},filePathRelative:"awesome/tmux.md"};export{t as data};

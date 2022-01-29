@@ -1,0 +1,1 @@
+const e={key:"v-1cc099bc",path:"/awesome/tool.html",title:"Tool",lang:"en-US",frontmatter:{title:"Tool"},excerpt:"",headers:[{level:2,title:"Diagram",slug:"diagram",children:[]}],git:{updatedTime:1625363623e3,contributors:[{name:"zxf4399",email:"zxf4399@gmail.com",commits:1}]},filePathRelative:"awesome/tool.md"};export{e as data};

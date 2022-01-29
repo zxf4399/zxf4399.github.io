@@ -8,7 +8,7 @@ title: Cli
 
 ## Node
 
-[nvm](https://github.com/nvm-sh/nvm) - About Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+[fnm](https://github.com/Schniz/fnm) - 🚀 Fast and simple Node.js version manager, built in Rust
 
 ## System
 

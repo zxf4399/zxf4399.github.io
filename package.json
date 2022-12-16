@@ -1,11 +1,11 @@
 {
   "name": "zxf4399.github.io",
   "version": "0.0.0",
+  "packageManager": "pnpm@7.18.2",
   "private": true,
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
     "npm-check-updates": "ncu",
     "server": "hexo server",
     "sort-package-json": "sort-package-json"

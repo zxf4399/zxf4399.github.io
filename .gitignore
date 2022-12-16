@@ -1,3 +1,8 @@
+# pnpm
 node_modules
+
+# hexo
+db.json
+
 .temp
 .cache

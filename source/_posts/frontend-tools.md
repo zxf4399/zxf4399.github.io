@@ -7,3 +7,8 @@ tags: 前端
 ## 工具类
 
 - [**kind-of**](https://github.com/jonschlinkert/kind-of)
+
+## 命令行
+
+- [**npm-check-updates**](https://github.com/raineorshine/npm-check-updates)
+- [**sort-package-json**](https://github.com/keithamus/sort-package-json)

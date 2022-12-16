@@ -13,7 +13,6 @@ specifiers:
   hexo-theme-landscape: ^0.0.3
   hexo-theme-next: ^8.14.0
   npm-check-updates: ^16.6.0
-  prettier: ^2.8.1
   sort-package-json: ^2.1.0
 
 devDependencies:
@@ -29,7 +28,6 @@ devDependencies:
   hexo-theme-landscape: 0.0.3
   hexo-theme-next: 8.14.0
   npm-check-updates: 16.6.0
-  prettier: 2.8.1
   sort-package-json: 2.1.0
 
 packages:
@@ -2408,12 +2406,6 @@ packages:
   /prelude-ls/1.1.2:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
-    dev: true
-
-  /prettier/2.8.1:
-    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
     dev: true
 
   /pretty-hrtime/1.0.3:

@@ -1,0 +1,11 @@
+---
+title: tools
+date: 2022-12-17 16:54:55
+---
+
+## 命令行
+
+- [**fnm**](https://github.com/Schniz/fnm)
+- [**htop**](https://github.com/htop-dev/htop)
+- [**neovim**](https://github.com/neovim/neovim)
+- [**tmux**](https://github.com/tmux/tmux)

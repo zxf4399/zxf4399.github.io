@@ -8,6 +8,8 @@ tags: 前端
 
 - [**kind-of**](https://github.com/jonschlinkert/kind-of)
 
+<!-- more -->
+
 ## 命令行
 
 - [**npm-check-updates**](https://github.com/raineorshine/npm-check-updates)

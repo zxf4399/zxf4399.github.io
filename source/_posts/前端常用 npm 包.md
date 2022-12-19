@@ -14,3 +14,5 @@ tags: 前端
 
 - [**npm-check-updates**](https://github.com/raineorshine/npm-check-updates)
 - [**sort-package-json**](https://github.com/keithamus/sort-package-json)
+
+> 版权声明：自由转载-非商用-非衍生-保持署名（[创意共享 3.0 许可证](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)）

@@ -8,3 +8,8 @@ gitalk:
   distraction_free_mode: true
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
   language: zh-CN
+
+codeblock:
+  theme:
+    light: github-dark
+    dark: github-dark

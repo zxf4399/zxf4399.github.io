@@ -1,0 +1,10 @@
+gitalk:
+  enable: true
+  github_id: zxf4399
+  repo: zxf4399.github.io
+  client_id: 48f828684ccca5ccf224
+  client_secret: fc377d43c51c467f253da2f674e07016ab3682b5
+  admin_user: zxf4399
+  distraction_free_mode: true
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+  language: zh-CN

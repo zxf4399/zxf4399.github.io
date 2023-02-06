@@ -1,8 +1,7 @@
 ---
-layout: turborepo
 title: 快速入门
 date: 2023-02-03 15:46:58
-tags:
+tags: 前端
 ---
 
 Turborepo 是一个针对 **JavaScript** 和 **Typescript** 代码库优化的智能构建系统。
@@ -19,6 +18,8 @@ Turborepo 支持：
 
 - 想同的工作不做两遍 (Turborepo 会记住你的任务的结果，下次运行时会跳过已经完成的工作)
 - 尽可能的并行化任务 (即使你运行任务的方式可能没有经过优化，Turborepo 会智能调度任务，最大限度地减少空闲的 CPU)
+
+<!-- more -->
 
 ## 使用 Turborepo
 
@@ -115,8 +116,39 @@ TurboRepo 可以添加到**任何**的项目中来加速 `package.json` 脚本�
 
 ### 创建一个新的 monorepo 代码库
 
-可以使用 [create-turbo](https://www.npmjs.com/package/create-turbo) 创建
+#### 1. 运行 `create-turbo`
 
 ```bash
 npx create-turbo@latest
 ```
+
+安装过程中，你将会被询问几个问题：
+
+**你喜欢在哪里创建你的 turorepo 代码库？**
+
+选择任意一个你喜欢的目录。默认是 `./my-turborepo`。
+
+**你想用什么包管理器？**
+
+- [npm](https://www.npmjs.com/)
+- [pnpm](https://pnpm.io/)
+- [yarn](https://yarnpkg.com/)
+
+推荐使用 `pnpm`，如果你还没有安装 `pnpm`，可以参考 [pnpm install](https://pnpm.io/installation)。
+
+#### 2. 探索你的代码库
+
+`create-turbo` 向你描述了你的代码库的结构：
+
+```bash
+>>> Creating a new turborepo with the following:
+ - apps/web: Next.js with TypeScript
+ - apps/docs: Next.js with TypeScript
+ - packages/ui: Shared React component library
+ - packages/eslint-config-custom: Shared configuration (ESLint)
+ - packages/tsconfig: Shared TypeScript `tsconfig.json`
+```
+
+每一个都是一个 workspace - 一个包含 `package.json` 的文件夹。每个 workspace 都可以声明它的依赖关系，运行自己的脚本，以及使用其他 workspace 的代码。
+
+##### 了解 `packages/ui`

@@ -302,3 +302,144 @@ module.exports = {
 就像 `tsconfig`，`eslint-config-custom` 让我们在 monorepo 中使用同一份 ESLint 配置，减少代码重复。
 
 ##### 总结
+
+理解 workspaces 之间的依赖关系非常重要。让我们来总结一下：
+
+- `web` - 依赖 `ui` , `tsconfig` 和 `eslint-config-custom`
+- `docs` - 依赖 `ui` , `tsconfig` 和 `eslint-config-custom`
+- `ui` - 依赖 `tsconfig` 和 `eslint-config-custom`
+- `tsconfig` - 没有依赖
+- `eslint-config-custom` - 没有依赖
+
+#### 3. 理解 `turbo.json`
+
+我们现在理解了我们的仓库和它的依赖。那么 Turborepo 在其中起着什么样的作用？
+
+Turborepo 的帮助在于更简单，高效的运行任务。
+
+让我们来看看 `turbo.json`：
+
+```json
+// turbo.json
+{
+  "pipeline": {
+    "build": {
+      //   ^^^^^
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {},
+    "dev": {
+      //   ^^^
+      "cache": false
+    }
+  }
+}
+```
+
+从这里我们可以看到与 `turbo` 有关的 3 个任务 - `lint`, `dev` 和 `build`。
+在 `turbo.json` 注册的每个任务可以用 `turbo run <task>` 来运行。(或者使用更短的 `turbo <task>`命令)
+
+让我们运行一个 `hello` 命令来看看接下来会发生什么 - 这个命令在 `turbo.json` 中并不存在：
+
+```bash
+turbo hello
+```
+
+你可以再终端看到这个错误：
+
+```bash
+task `hello` not found in turbo `pipeline` in "turbo.json".
+Are you sure you added it?
+```
+
+所以让我们记住 - 为了让 `turbo` 运行任务，请务必在 `turbo.json` 中注册它。
+
+让我们研究下这些已有的 `turbo` 任务。
+
+#### 4. 用 Turborepo 做 Linting
+
+运行 `lint` 脚本：
+
+```bash
+turbo lint
+```
+
+在终端上会发生这些事情：
+
+1. 同一时间内会运行多个脚本，脚本的前缀是 `docs:lint`， `web:lint` 和 `ui:lint`。
+2. 3 个脚本运行成功，你可以在终端上看到 `3 successful`。
+3. 你也会看到 `0 cached, 3 total`。后面我们会讨论这部分内容。
+
+这些脚本来源于各个 workspace 的 `package.json`。每个 workspace 可以有自己的 `lint`脚本：
+
+```json
+// apps/web/package.json
+{
+  "scripts": {
+    "lint": "next lint"
+  }
+}
+```
+
+```json
+// apps/docs/package.json
+{
+  "scripts": {
+    "lint": "next lint"
+  }
+}
+```
+
+```json
+// packages/ui/package.json
+{
+  "scripts": {
+    "lint": "eslint *.ts*"
+  }
+}
+```
+
+当运行 `turbo lint` 时，Turborepo 会寻找每个 workspace 的 `lint` 脚本，并运行它们。
+
+##### 使用缓存
+
+让我们再次运行 `lint` 脚本。你会在终端发现一些新的内容：
+
+1. `cache hit, replaying out` 出现在 `docs:lint`，`web:lint` 和 `ui:lint` 。
+2. 你会看到 `3 cached, 3 total`。
+3. 运行时间应该小于 `100ms` 并出现 `>>> FULL TURBO`。
+
+刚刚发生了一些有趣的事情。Turborepo 意识到 **在上一次运行 lint 脚本后，我们的代码没有发生变化**
+
+让我们在 `apps/docs` 里改一些代码：
+
+```diff
+// apps/docs/pages/index.tsx
+import { Button } from "ui";
+
+export default function Docs() {
+  return (
+    <div>
+-     <h1>Docs</h1>
++     <h1>My great docs</h1>
+      <Button />
+    </div>
+  );
+}
+```
+
+现在我们再次运行 `lint` 脚本，你会在终端上看到：
+
+1. `docs:lint` 旁显示 `cache miss, running`。这意味着 `docs` 运行了它的 lint 脚本
+2. `2 cached, 3 total` 显示在底部。
+
+这意味着 `我们以前的任务结果仍然被缓存`。只有 `docs` 里的 `lint` 脚本被重新运行了。
+
+#### 5. 用 Turborepo Building
+
+让我们运行 `build` 脚本：
+
+```bash
+turbo build
+```

@@ -443,3 +443,73 @@ export default function Docs() {
 ```bash
 turbo build
 ```
+
+你将会看到与我们运行 `lint` 脚本相似的输出。仅仅 `apps/docs` 和 `apps/web` 在它们的 `package.json` 中有 `build` 脚本，所以只有这两个脚本被运行了。
+
+让我们看看 `turbo.json` 的 `build`。这里有一些有趣的配置。
+
+```json
+{
+  "pipeline": {
+    "build": {
+      "outputs": [".next/**"]
+    }
+  }
+}
+```
+
+你会注意到这里指定了 `outputs`。声明 outputs 意味着当 `turbo` 完成运行任务后，它会保存你指定的 outputs 到它的缓存中。
+
+`apps/docs` 和 `apps/web` 都是 Next.js 应用，它们的 output 都是到 `./.next` 文件夹。
+
+让我们尝试把 `apps/docs/.next` 文件夹删除。
+
+重新运行 `build` 脚本。你会发现：
+
+1. 我们击中了 `FULL TURBO` - 编译完成时间小于 `100ms`。
+2. `.next` 文件夹重新出现了！
+
+Turborepo 缓存了之前的编译结果。当我们重新运行 `build` 命令后，它会从缓存中恢复全量的 `.next/**` 文件夹。
+
+#### 6. 运行 dev 脚本
+
+让我们运行 `dev` 脚本：
+
+```bash
+turbo dev
+```
+
+你会发现终端里的一些信息：
+
+1. 仅仅执行两个脚本 - `docs:dev` 和 `web:dev`。因为仅有两个 workspaces 指定了 `dev` 脚本。
+2. 两个 `dev` 脚本同时运行，启动了两个 Next.js 应用，端口分别是 `3000` 和 `3001`。
+
+试着退出 `turbo dev`，然后再次运行它。你会发现终端没有输出 `FULL TURBO`。这是为什么呢？
+
+让我们看看 `turbo.json`：
+
+```json
+// turbo.json
+{
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
+```
+
+在 `dev` 里，我们指定了 `"cache": false`。 这意味着我们告诉 Turborepo 不要缓存 `dev` 脚本的输出。`dev` 运行的是一个长期运行的进程，我们不希望它被缓存。
+
+##### 一次仅运行一个脚本的 `dev` 脚本
+
+默认情况下，`turbo dev` 将会运行所有 workspaces 的 `dev` 脚本。但有时候，你可能只想运行一个脚本。
+
+为了实现这个，你可以使用 `--filter` 标志：
+
+```bash
+turbo dev --filter docs
+```
+
+你会发现现在运行的只有 `docs:dev` 脚本。

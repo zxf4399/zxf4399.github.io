@@ -125,4 +125,6 @@ mgre rm
 
 本文介绍了 [mgre](https://github.com/zxf4399/mgre)，一款解决 Git 仓库 clone 过程中遇到的问题的 CLI 工具。该工具具有 clone、find、import 和 rm 命令等基本功能，可有效管理 Git 仓库。
 
-如有任何问题或建议，请在下方留言，或者在 [mgre_issue](https://github.com/zxf4399/mgre/issues)
+如有任何问题或建议，请在下方留言，或者在 [mgre_issue](https://github.com/zxf4399/mgre/issues) 中提出。
+
+如果你觉得这个工具还不错，欢迎给我点个 star。Thanks♪(･ω･)ﾉ

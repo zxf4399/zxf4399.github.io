@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "new": "hexo new",
     "npm-check-updates": "ncu",
-    "server": "hexo server",
+    "dev": "hexo server",
     "sort-package-json": "sort-package-json"
   },
   "devDependencies": {

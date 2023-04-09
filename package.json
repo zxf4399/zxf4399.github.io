@@ -26,7 +26,7 @@
     "npm-check-updates": "^16.6.3",
     "sort-package-json": "^2.4.0"
   },
-  "packageManager": "pnpm@7.18.2",
+  "packageManager": "pnpm@7.29.3",
   "hexo": {
     "version": "6.3.0"
   }

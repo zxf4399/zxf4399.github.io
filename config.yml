@@ -6,7 +6,7 @@ theme: PaperMod
 menu:
   main:
     - identifier: tags
-      name: tags
+      name: 分类
       url: /tags/
       weight: 20
 

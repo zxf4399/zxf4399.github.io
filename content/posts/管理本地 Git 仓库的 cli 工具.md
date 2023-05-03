@@ -129,3 +129,5 @@ mgre rm
 如有任何问题或建议，请在下方留言，或者在 [mgre_issue](https://github.com/zxf4399/mgre/issues) 中提出。
 
 如果你觉得这个工具还不错，欢迎给我点个 star。Thanks♪(･ω･)ﾉ
+
+> 本作品系原创，采用[《署名-非商业性使用-禁止演绎 4.0 国际》](https://creativecommons.org/licenses/by-nc-nd/4.0/)许可协议

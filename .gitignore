@@ -1,11 +1,1 @@
-# pnpm
-node_modules
 
-# hexo
-db.json
-
-.temp
-.cache
-
-# MacOS
-.DS_Store

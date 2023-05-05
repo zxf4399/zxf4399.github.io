@@ -1,7 +1,8 @@
 ---
-title: 管理本地 Git 仓库的 cli 工具
-date: 2023-03-06 20:30:58
-tags: cli
+title: "管理本地 Git 仓库的 cli 工具"
+date: 2023-03-06T20:30:58+08:00
+tags:
+  - 轮子
 ---
 
 ## 背景
@@ -106,9 +107,9 @@ mgre import ~/code/mgre
 base
 ├── config.json
 ├── github.com
-│   └── zxf4399
-│       ├── mgre
-│       └── zxf4399.github.io
+│   └── zxf4399
+│       ├── mgre
+│       └── zxf4399.github.io
 └── mgre.db
 
 ```
@@ -128,3 +129,5 @@ mgre rm
 如有任何问题或建议，请在下方留言，或者在 [mgre_issue](https://github.com/zxf4399/mgre/issues) 中提出。
 
 如果你觉得这个工具还不错，欢迎给我点个 star。Thanks♪(･ω･)ﾉ
+
+> 本作品系原创，采用[《署名-非商业性使用-禁止演绎 4.0 国际》](https://creativecommons.org/licenses/by-nc-nd/4.0/)许可协议

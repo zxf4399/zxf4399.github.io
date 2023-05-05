@@ -1,7 +1,8 @@
 ---
-title: 精读 echarts-for-react 源码
-date: 2022-12-19 20:16:35
-tags: [React, echarts]
+title: "精读 echarts-for-react 源码"
+date: 2020-09-29T17:51:35+08:00
+tags:
+  - 源码
 ---
 
 ## 引言

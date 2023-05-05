@@ -1,0 +1,14 @@
+baseURL: "http://example.org/"
+languageCode: en-us
+title: 郑贤锋的网络日志
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: tags
+      name: 分类
+      url: /tags/
+      weight: 20
+
+params:
+  ShowReadingTime: true

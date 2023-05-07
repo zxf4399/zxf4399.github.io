@@ -11,5 +11,6 @@ menu:
       weight: 20
 
 params:
-  ShowReadingTime: true
   EnableBusuanzi: true
+  ShowReadingTime: true
+  ShowWordCount: true

@@ -130,8 +130,8 @@ flex: 1 实际上代表三个属性：
 
 | container  | value                      |
 | ---------- | -------------------------- |
-| scroll     | content-based minimum size |
-| not scroll | 0                          |
+| scroll     | 0                          |
+| not scroll | content-based minimum size |
 
 结合本文例子，我们分析一下 .main 元素为什么会出现这个情况。
 

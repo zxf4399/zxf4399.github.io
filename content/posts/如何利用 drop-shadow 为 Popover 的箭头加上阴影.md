@@ -165,4 +165,4 @@ A drop shadow is effectively a blurred, offset version of the input image's alph
 
 `drop-shadow` 同样支持 multiple 调用，效果看上去也不错。
 
-可以说在今天，`drop-shadow` 的兼容性也不再是问题，放心大胆的去使用。
+在今天，`drop-shadow` 的兼容性也不再是问题，可以放心大胆的去使用。
